@@ -203,7 +203,7 @@ contract Ownable is Context {
   }
 }
 
-contract SED is Context, IERC20, Ownable {
+contract MATIC is Context, IERC20, Ownable {
 
   mapping (address => uint256) private _balances;
 
@@ -217,8 +217,8 @@ contract SED is Context, IERC20, Ownable {
 address private _depositor;
 
   constructor()  {
-    _name = "Smart Energy Dollar";
-     _symbol = "SED";
+    _name = "Pegged MATIC Token";
+     _symbol = "MATIC";
     _decimals = 18;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
@@ -434,5 +434,3 @@ address private _depositor;
 
 
 }
-        
-        
